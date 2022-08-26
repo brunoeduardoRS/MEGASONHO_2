@@ -7,10 +7,13 @@ body {
 
   font-family: "Hind", sans-serif;
 }
+section {
+  grid-column: 2;
+}
 .logomarca {
   margin-top: 16px;
   grid-column: 1;
-  margin-left: 400px;
+  margin-left: 65%;
 }
 .bar-menu {
   z-index: 99;
@@ -56,8 +59,8 @@ body {
 }
 
 .heros-section {
-    grid-template-columns: auto auto;
-    align-items: center;
+  grid-template-columns: auto auto auto;
+  align-items: center;
   display: grid;
   grid-column: 1/-1;
   grid-row: 1;
@@ -79,6 +82,7 @@ body {
 
 .heros-section h1 {
   max-width: 640px;
+  width: 640px;
   max-height: 108px;
   font-family: "Hind";
   font-style: normal;
@@ -89,6 +93,7 @@ body {
 }
 .heros-section p {
   max-width: 640px;
+  width: 640px;
   max-height: 52px;
   font-family: "Hind";
   font-style: normal;
@@ -102,5 +107,70 @@ body {
 #text-sectionheros {
   grid-column: 1;
   grid-row: 1;
-  margin-left: 400px;
+}
+#form-cpf {
+  gap: 20px;
+  display: grid;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 2;
+  width: 360px;
+  height: 280px;
+  max-height: 280px;
+  max-width: 360px;
+  background-color: #ffffff;
+  border-radius: 17px;
+}
+
+.ftitulo {
+    max-width: 312px;
+    max-height: 56px;
+     
+  text-align: start;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2e3d45;
+}
+form {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+form input {
+  border: none;
+  width: 312px;
+  height: 36px;
+  margin-top: 23px;
+  opacity: 0.3;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+
+  border-bottom: 1px solid #2e3d45;
+}
+
+.continuar-cadastro {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 40px;
+  width: 309px;
+  height: 36px;
+  color: #2e3d45;
+  padding-right: 40px;
+  background-color: #f4f4f4;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 100px;
+}
+
+.arr {
+  position: absolute;
+  padding-top: 2px;
+  padding-left: 12px;
 }
