@@ -59,15 +59,16 @@ section {
 }
 
 .heros-section {
-  grid-template-columns: 17em 640px auto auto;
-  gap: 120px;
+  flex-grow: initial;
+  
   align-items: center;
-  display: grid;
+  display: flex;
   grid-column: 1/-1;
   grid-row: 1;
   order: 2;
   max-height: 980px;
   max-width: 100%;
+  width: 100%;
 }
 .img-homesecao {
   max-width: 100%;
@@ -82,7 +83,9 @@ section {
 }
 
 .heros-section h1 {
-  max-width: 640rem;
+ flex-basis: auto;
+ order: 1;
+  max-width: 640px;
   width: 640px;
   max-height: 108px;
   font-family: "Hind";
@@ -106,11 +109,13 @@ section {
 }
 
 #text-sectionheros {
-    
-  grid-column: 2;
-  grid-row: 1;
+    position:absolute ;
+  order: 1;
+  
 }
 #form-cpf {
+    z-index: 999;
+    order: 2;
   gap: 20px;
   display: grid;
   align-items: center;
